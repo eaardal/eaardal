@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal", "Eaardal\Eaardal.csproj", "{BE688354-A348-4E8B-84C5-8DDBC239277D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal.ConsoleClient", "Eaardal.ConsoleClient\Eaardal.ConsoleClient.csproj", "{206E510F-E104-46F6-BE5D-F4C6A39490FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE688354-A348-4E8B-84C5-8DDBC239277D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE688354-A348-4E8B-84C5-8DDBC239277D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE688354-A348-4E8B-84C5-8DDBC239277D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE688354-A348-4E8B-84C5-8DDBC239277D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206E510F-E104-46F6-BE5D-F4C6A39490FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206E510F-E104-46F6-BE5D-F4C6A39490FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206E510F-E104-46F6-BE5D-F4C6A39490FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206E510F-E104-46F6-BE5D-F4C6A39490FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
