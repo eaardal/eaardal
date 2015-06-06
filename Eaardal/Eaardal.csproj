@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Eaardal</RootNamespace>
     <AssemblyName>Eaardal</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,6 +64,7 @@
     <Compile Include="Logging\LogFactories\DebugLogFactory.cs" />
     <Compile Include="Logging\LogFactories\SerilogLogFactory.cs" />
     <Compile Include="Logging\LogFactories\TraceLogFactory.cs" />
+    <Compile Include="Logging\LogFactories\WindowsEventLogLogFactory.cs" />
     <Compile Include="Logging\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup\AutofacConfig.cs" />
