@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal", "Eaardal\Eaardal.csproj", "{BE688354-A348-4E8B-84C5-8DDBC239277D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal.ConsoleClient", "Eaardal.ConsoleClient\Eaardal.ConsoleClient.csproj", "{206E510F-E104-46F6-BE5D-F4C6A39490FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal.TestSuite", "Eaardal.TestSuite\Eaardal.TestSuite.csproj", "{7D2B33C8-73F5-4A21-9FBB-379C827D1B14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal.TestSuite.AspNet", "Eaardal.TestSuite.AspNet\Eaardal.TestSuite.AspNet.csproj", "{38BCF1CB-7C72-42A7-9D5E-6E5B3B88673C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal.TestSuite.UnitTests", "Eaardal.TestSuite.UnitTests\Eaardal.TestSuite.UnitTests.csproj", "{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{206E510F-E104-46F6-BE5D-F4C6A39490FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{206E510F-E104-46F6-BE5D-F4C6A39490FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{206E510F-E104-46F6-BE5D-F4C6A39490FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D2B33C8-73F5-4A21-9FBB-379C827D1B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2B33C8-73F5-4A21-9FBB-379C827D1B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2B33C8-73F5-4A21-9FBB-379C827D1B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2B33C8-73F5-4A21-9FBB-379C827D1B14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BCF1CB-7C72-42A7-9D5E-6E5B3B88673C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BCF1CB-7C72-42A7-9D5E-6E5B3B88673C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BCF1CB-7C72-42A7-9D5E-6E5B3B88673C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BCF1CB-7C72-42A7-9D5E-6E5B3B88673C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
