@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal.TestSuite.AspNet", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal.TestSuite.UnitTests", "Eaardal.TestSuite.UnitTests\Eaardal.TestSuite.UnitTests.csproj", "{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eaardal.UnitTests", "Eaardal.UnitTests\Eaardal.UnitTests.csproj", "{641EF4F6-9338-4A10-A42A-2D9DD5E1F8F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A89E210-32DD-4AEA-B7A1-7FE833A0CCF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641EF4F6-9338-4A10-A42A-2D9DD5E1F8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641EF4F6-9338-4A10-A42A-2D9DD5E1F8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641EF4F6-9338-4A10-A42A-2D9DD5E1F8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641EF4F6-9338-4A10-A42A-2D9DD5E1F8F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

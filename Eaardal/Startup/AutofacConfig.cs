@@ -14,7 +14,7 @@ namespace Eaardal.Startup
     {
         private ContainerBuilder _builder;
 
-        public AutofacConfig ConfigureDefault<TTypeInThisAssembly>(string appAssemblyIdentifier = null)
+        public AutofacConfig BuildDefault<TTypeInThisAssembly>(string appAssemblyIdentifier = null)
         {
             _builder = new ContainerBuilder();
 
@@ -43,9 +43,17 @@ namespace Eaardal.Startup
             return this;
         }
 
-        public AutofacConfig ConfigureCustom(Action<ContainerBuilder> buildCustomConfig)
+        public AutofacConfig Build(Action<ContainerBuilder> buildCustomConfig)
         {
             buildCustomConfig(_builder);
+            return this;
+        }
+
+        public AutofacConfig UpdateContainer(Action<IContainer> updateAction)
+        {
+            var container = _builder.Build();
+            updateAction(container);
+            _builder = new ContainerBuilder();
             return this;
         }
 

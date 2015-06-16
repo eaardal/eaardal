@@ -17,20 +17,21 @@ namespace Eaardal.Startup
             _logger = new Logger();
         }
 
-        public virtual BootstrapBuilder Wire()
-        {
-            return new BootstrapBuilder();
-        }
-
         public virtual BootstrapBuilder WithDefaultAutofacConfig<TTypeInThisAssembly>(string appAssemblyIdentifier = null)
         {
-            _autofacConfig.ConfigureDefault<TTypeInThisAssembly>(appAssemblyIdentifier);
+            _autofacConfig.BuildDefault<TTypeInThisAssembly>(appAssemblyIdentifier);
             return this;
         }
 
         public virtual BootstrapBuilder WithCustomizedAutofacConfig(Action<ContainerBuilder> customAutofacConfig)
         {
-            _autofacConfig.ConfigureCustom(customAutofacConfig);
+            _autofacConfig.Build(customAutofacConfig);
+            return this;
+        }
+
+        public virtual BootstrapBuilder WithCustomizedAutofacConfig(Action<IContainer> customAutofacConfig)
+        {
+            _autofacConfig.UpdateContainer(customAutofacConfig);
             return this;
         }
 
@@ -48,14 +49,12 @@ namespace Eaardal.Startup
         {
             var container = _autofacConfig.Build();
 
-            var ioc = container.Resolve<IAutofacContainer>();
-            ioc.RegisterContainer(container);
+            var iocContainer = container.Resolve<IAutofacContainer>();
+            iocContainer.RegisterContainer(container);
 
-            return new Config
-            {
-                Logger = _logger,
-                IoC = (IIoC)ioc
-            };
+            var ioc = (IIoC) iocContainer;
+
+            return new Config(ioc, _logger);
         }
     }
 }
