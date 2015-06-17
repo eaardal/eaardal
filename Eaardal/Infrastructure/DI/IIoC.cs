@@ -6,6 +6,6 @@ namespace Eaardal.Infrastructure.DI
     {
         T Resolve<T>();
         IEnumerable<T> ResolveAll<T>();
-        T Resolve<T>(string key);
+        T Resolve<T>(string name);
     }
 }

@@ -17,9 +17,9 @@ namespace Eaardal.Infrastructure.DI
             return _container.Resolve<IEnumerable<T>>();
         }
 
-        public T Resolve<T>(string key)
+        public T Resolve<T>(string name)
         {
-            return _container.ResolveKeyed<T>(key);
+            return _container.ResolveNamed<T>(name);
         }
 
         public void RegisterContainer(IContainer container)

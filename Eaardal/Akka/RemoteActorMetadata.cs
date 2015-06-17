@@ -13,14 +13,14 @@ namespace Eaardal.Akka
         {
             Parent = parent;
             RemoteBasePath = remoteBasePath;
-            RemotePath = string.Format("{0}{1}{2}", remoteBasePath, EndRemotePath(remoteBasePath), Path);
+            RemotePath = string.Format("{0}{1}", FormatPathEnd(remoteBasePath), Path);
         }
 
-        private static string EndRemotePath(string remoteBasePath)
+        private static string FormatPathEnd(string remoteBasePath)
         {
             return remoteBasePath.EndsWith("/")
-                ? remoteBasePath.Substring(0, remoteBasePath.IndexOf("/", StringComparison.Ordinal))
-                : "";
+                ? remoteBasePath.Substring(0, remoteBasePath.LastIndexOf("/", StringComparison.Ordinal))
+                : remoteBasePath;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Eaardal.ConsoleClient
         public static Config Wire()
         {
             var config =
-               new BootstrapBuilder().Wire()
+               new BootstrapBuilder()
                    .WithDefaultAutofacConfig<Config>()
                    .WithCustomizedAutofacConfig(ConfigureIoC)
                    .WithDefaultLogConfig()
